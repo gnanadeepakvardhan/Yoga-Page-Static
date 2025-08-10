@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.section {
+    width: 100%;
+}
+
+.bg-container {
+    background-image: url('https://assets.ccbp.in/frontend/static-website/yoga-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heading {
+    font-size: 29px;
+    color: #132d84;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.image {
+    height: 260px;
+    width: 240px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.button {
+    background-color: #132d84;
+    color: #fad693;
+    border-radius: 25px;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(19, 45, 132, 0.3);
+}
+
+.button:hover {
+    background-color: #0f1f5a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(19, 45, 132, 0.4);
+}
+
+.bg-container2 {
+    background-color: #ffedcb;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.image2 {
+    height: 200px;
+    width: 180px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.heading2 {
+    font-size: 29px;
+    color: #132d84;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.bg-color-card {
+    background-color: #ffe2ab;
+    border-radius: 20px;
+    margin: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.bg-color-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.heading3 {
+    font-size: 16px;
+    color: #323f4b;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.card1 {
+    padding: 10px;
+    flex: 1;
+}
+
+.paragraph2 {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.image4 {
+    height: 80px;
+    width: 60px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .heading, .heading2 {
+        font-size: 24px;
+    }
+    
+    .image {
+        height: 200px;
+        width: 180px;
+    }
+    
+    .image2 {
+        height: 150px;
+        width: 130px;
+    }
+    
+    .bg-color-card {
+        margin: 10px;
+        padding: 12px;
+    }
+    
+    .button {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading, .heading2 {
+        font-size: 20px;
+    }
+    
+    .image {
+        height: 180px;
+        width: 160px;
+    }
+    
+    .image2 {
+        height: 120px;
+        width: 100px;
+    }
+    
+    .bg-color-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .image4 {
+        margin: 10px auto;
+    }
+}
